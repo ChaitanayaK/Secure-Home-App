@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/settings_btn_id"
+            android:background="@drawable/settings_icon"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_margin="5sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="SECURE HOME"
+        android:gravity="center"
+        android:paddingHorizontal="15sp"
+        android:paddingVertical="5sp"
+        android:layout_gravity="center"
+
+        android:textSize="37sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:src="@drawable/signature_logo" />
+
+    <TextView
+        android:id="@+id/welcome_txt_id"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textColor="#2C2B2B"
+        android:textSize="23sp"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/devices_btn_id"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/devices_icon"
+        android:text="Devices" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#9D94D1"
+    tools:context=".FingerprintActivity">
+
+
+    <ImageView
+        android:layout_width="302dp"
+        android:layout_height="302dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/biometric_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="20dp"
+        android:text="USE YOUR FINGER PRINT TO UNLOCK"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="8dp"
+        android:text="Please place user finger for authentication"/>
+
+    <TextView
+        android:id="@+id/textMsg"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

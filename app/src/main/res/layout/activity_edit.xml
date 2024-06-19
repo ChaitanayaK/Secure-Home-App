@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_color"
+    tools:context=".EditActivity">
+
+    <!-- Linear Layout to hold the top-aligned button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_colour"
+        android:gravity="end"> <!-- Align children to the enad (right) -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/delete_btn_id"
+                android:layout_margin="10dp"
+                android:layout_width="65dp"
+                android:background="@drawable/delete_icon"
+                android:layout_height="58dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/edit_btn_id"
+                android:layout_margin="10dp"
+                android:layout_width="65dp"
+                android:background="@drawable/edit_icon"
+                android:layout_height="58dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/power_btn_id"
+                android:layout_margin="10dp"
+                android:layout_width="58dp"
+                android:background="@drawable/green_dot_icon"
+                android:layout_height="58dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/share_btn_id"
+                android:layout_margin="10dp"
+                android:layout_width="58dp"
+                android:background="@drawable/share_icon"
+                android:layout_height="58dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TextView -->
+    <TextView
+        android:text="device"
+        android:id="@+id/device_txt_id"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/text_color"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100sp"
+        android:layout_height="72dp"/>
+
+    <!-- Button at the bottom -->
+    <ImageButton
+        android:id="@+id/lock_btn_id"
+        android:text="Lock"
+        android:background="@drawable/lock_icon"
+        android:layout_width="222dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="100dp"/>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/group_btn_id"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginBottom="3sp"
+            android:background="@color/primary_colour"
+            android:text="Other members"
+            android:textColor="#ced4da"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

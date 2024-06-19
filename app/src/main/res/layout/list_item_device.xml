@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/textview_border">
+
+    <ImageView
+        android:id="@+id/type_icon_id"
+        android:text="type"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ced4da"
+        android:layout_marginLeft="5dp"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/status2"
+        android:text="BTN"
+        android:background="@drawable/lock_key_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/status1"
+        android:text="BTN"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>
